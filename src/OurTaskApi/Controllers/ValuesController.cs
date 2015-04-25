@@ -3,6 +3,7 @@ using System.Web.Http;
 
 namespace OurTaskApi.Controllers
 {
+    [RoutePrefix("api/values")]
     public class ValuesController : ApiController
     {
         // GET api/values

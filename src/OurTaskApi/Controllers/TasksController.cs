@@ -5,14 +5,14 @@ using OurTaskApi.Dto;
 
 namespace OurTaskApi.Controllers
 {
-    [Route("/api/tasks")]
-    public class TaskController:ApiController
+    [RoutePrefix("api/tasks")]
+    public class TasksController:ApiController
     {
         [Route("")]
         [HttpGet]
         public IEnumerable<TaskListing> Get()
         {
-            return null;
+            return new List<TaskListing>{new TaskListing()};
         }
 
         [Route("")]
@@ -22,14 +22,14 @@ namespace OurTaskApi.Controllers
             
         }
 
-        [Route("/{id}")]
+        [Route("{id}")]
         [HttpPut]
         public void Update(int id, UpdateTask task)
         {
             
         }
 
-        [Route("/{id}")]
+        [Route("{id}")]
         [HttpDelete]
         public void Delete(int id)
         {
