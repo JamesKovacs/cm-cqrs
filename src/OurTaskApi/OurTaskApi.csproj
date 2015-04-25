@@ -124,10 +124,12 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\TasksController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Dto\CreateTask.cs" />
     <Compile Include="Dto\DisplayTask.cs" />
     <Compile Include="Dto\TaskListing.cs" />
     <Compile Include="Dto\UpdateTask.cs" />
+    <Compile Include="Dto\UserListing.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
