@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.Web.Http;
 using OurTaskApi.Dto;
@@ -12,7 +12,25 @@ namespace OurTaskApi.Controllers
         [HttpGet]
         public IEnumerable<TaskListing> Get()
         {
-            return new List<TaskListing>{new TaskListing()};
+            return new List<TaskListing>{new TaskListing
+            {
+                Id = Guid.NewGuid(),
+                Name = "Build CQRS Application",
+                Instructions = "1. Attend Clear Measure CQRS workshop.\r\n2. Drink scotch.\r\n3. ???\r\n4. Profit!!!",
+                DueDate = DateTime.Now.AddHours(4),
+                AssignedPersonnel = new [] {
+                    new PersonListing
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Donald Belcham"
+                    },
+                    new PersonListing
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "James Kovacs"
+                    }
+                }
+            }};
         }
 
         [Route("{id}")]
