@@ -130,7 +130,6 @@
     <Compile Include="Dto\PersonListing.cs" />
     <Compile Include="Dto\TaskListing.cs" />
     <Compile Include="Dto\UpdateTask.cs" />
-    <Compile Include="Dto\UserListing.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

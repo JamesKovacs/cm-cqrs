@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Web.Http;
 using OurTaskApi.Dto;
@@ -10,10 +11,10 @@ namespace OurTaskApi.Controllers
     {
         [Route("")]
         [HttpGet]
-        public IEnumerable<UserListing> Get()
+        public IEnumerable<PersonListing> Get()
         {
             //list of all users
-            return new List<UserListing> {new UserListing {Name = "James"}, new UserListing {Name = "Donald"}};
+            return new List<PersonListing> {new PersonListing() {Name = "James", Id = Guid.NewGuid()}, new PersonListing(){Name = "Donald", Id = Guid.NewGuid()}};
         }
 
         [Route("{username}")]
@@ -26,7 +27,7 @@ namespace OurTaskApi.Controllers
 
         [Route("{username}/Subordinates")]
         [HttpGet]
-        public IEnumerable<UserListing> GetSubordinateUsers(string username)
+        public IEnumerable<PersonListing> GetSubordinateUsers(string username)
         {
             //list of all subordinate users
             return null;
