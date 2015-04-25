@@ -15,6 +15,13 @@ namespace OurTaskApi.Controllers
             return new List<TaskListing>{new TaskListing()};
         }
 
+        [Route("{id}")]
+        [HttpGet]
+        public DisplayTask GetTask(int id)
+        {
+            return new DisplayTask();
+        }
+
         [Route("")]
         [HttpPost]
         public void Create(CreateTask task)
