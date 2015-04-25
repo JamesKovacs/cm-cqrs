@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OurTaskApi", "OurTaskApi\OurTaskApi.csproj", "{E2382755-2BCB-45ED-8DB4-FAA95A0B0459}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OurTaskApi.Tests", "C:\Users\Donald\Documents\Visual Studio 2013\Projects\OurTaskApi\OurTaskApi.Tests\OurTaskApi.Tests.csproj", "{1D8BC7F4-20DD-497E-8CF3-B9564E8912B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OurTaskApi.Tests", "OurTaskApi.Tests\OurTaskApi.Tests.csproj", "{1D8BC7F4-20DD-497E-8CF3-B9564E8912B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
