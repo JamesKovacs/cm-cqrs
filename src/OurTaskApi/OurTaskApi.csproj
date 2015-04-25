@@ -119,6 +119,7 @@
     <Compile Include="Controllers\TasksController.cs" />
     <Compile Include="Dto\CreateTask.cs" />
     <Compile Include="Dto\DisplayTask.cs" />
+    <Compile Include="Dto\PersonListing.cs" />
     <Compile Include="Dto\TaskListing.cs" />
     <Compile Include="Dto\UpdateTask.cs" />
     <Compile Include="Global.asax.cs">
