@@ -109,7 +109,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\TaskController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Dto\CreateTask.cs" />
+    <Compile Include="Dto\TaskListing.cs" />
+    <Compile Include="Dto\UpdateTask.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
